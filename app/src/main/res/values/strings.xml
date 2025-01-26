@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">FormApp</string>
+
+    <!-- Login Page -->
+    <string name="log">Login Page</string>
+    <string name="h1">Please fill the details below to login</string>
+    <string name="user">Username</string>
+    <string name="pass">Password</string>
+    <string name="login">Login</string>
+    <string name="q">Don\'t have an account?\n</string>
+    <string name="reg1">Register here</string>
+
+    <!-- Toasts - Login -->
+    <string name="invalid_log">Invalid username or password</string>
+    <string name="valid_log">Login Successful. Directing to User Details...</string>
+
+    <!-- REGISTRATION PAGE -->
+    <string name="h2">Registration Page</string>
+    <string name="h3">Please fill all the fields below to register:</string>
+    <string name="fname">Full Name</string>
+    <string name="year">Please choose your Year of birth</string>
+
+    <!-- Gender - Reg -->
+    <string name="f">Female</string>
+    <string name="m">Male</string>
+    <string name="gendertxt">Please select your sex:</string>
+
+    <!-- UserDet - Reg -->
+    <string name="username">Enter a username</string>
+    <string name="pwd">Enter password</string>
+    <string name="rpwd">Please re-enter your password</string>
+
+    <!-- Buttons - Reg -->
+    <string name="clear">Clear Form</string>
+    <string name="register">Register</string>
+    <string name="goback">Go Back</string>
+
+    <!-- Checkbox - Reg -->
+    <string name="tac"><![CDATA[Terms & Condititons]]></string>
+    <string name="click_here">Click here to read</string>
+
+    <!-- Terms -->
+    <string name="terms_and_conditions">
+        \nBy using this app, you agree to the following terms and conditions:
+        \n\t1. You must be at least 18 years old.
+        \n\t2. You agree not to misuse the app.
+        \n\t3. We collect your data for improving the service.
+        \nFor more details, please refer to our full terms and privacy policy.
+    </string>
+
+    <!-- Toasts - Reg -->
+    <string name="istaken">Username is already taken.</string>
+    <string name="chooseGend">Please select your gender.</string>
+    <string name="chooseYOB">Please select your year of birth.</string>
+    <string name="pwdne">Passwords do not match.</string>
+    <string name="reg_S">Registration successful! Please login.</string>
+    <string name="error1"><![CDATA[Username & Password must be at least 6 characters long]]></string>
+    <string name="agree">You must agree to the terms and conditions</string>
+
+    <!--  USER DETAIL PAGE -->
+    <string name="dob">Year of Birth: </string>
+    <string name="user_dets">User Details</string>
+    <string name="usergender">Gender:</string>
+    <string name="userntxt">Username:</string>
+    <string name="pwdtxt">Password:</string>
+    <string name="log_out">Log out</string>
+    <string name="welcome">Welcome,</string>
+    <string name="back2login">Click here to go back to Login Page.</string>
+    <string name="logout">Logging Out</string>
+    <string name="age">Age:</string>
+
+    <!-- TERMS PAGE -->
+    <string name="go_to">Go Back to Registration Page</string>
+
+</resources>

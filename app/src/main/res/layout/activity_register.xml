@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Register">
+
+    <!-- Headings -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/h2"
+        android:textSize="25sp"
+        android:textColor="@color/navy"
+        android:fontFamily="serif" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/h3"
+        android:textStyle="italic"
+        android:textSize="20sp"/>
+
+    <!-- Full Name -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nametxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:hint="@string/fname"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Gender -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="@string/gendertxt"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+    <RadioGroup
+        android:id="@+id/gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:id="@+id/m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
+            android:text="@string/m"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+        <RadioButton
+            android:id="@+id/f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/f"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+    </RadioGroup>
+
+    <!-- Year of Birth -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/year"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+        <Spinner
+            android:id="@+id/yobSpin"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:padding="12dp" />
+    </LinearLayout>
+
+    <!-- Username -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:errorEnabled="true"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/usern"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:hint="@string/user" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Password -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textlayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:passwordToggleEnabled="true"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15sp"
+            android:layout_marginStart="15sp"
+            android:hint="@string/pwd"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Reentering Passwrd -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textlayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:passwordToggleEnabled="true"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/repwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:hint="@string/rpwd"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Checkbox-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/checktac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="50dp"
+            android:layout_marginStart="15dp"
+            android:text="@string/tac">
+        </CheckBox>
+        <Button
+            android:id="@+id/click"
+            android:textColor="@android:color/holo_blue_dark"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/click_here"
+            android:onClick="onClick"/>
+    </LinearLayout>
+
+    <!-- Buttons -->
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/navy"
+            android:textSize="18sp"
+            android:text="@string/clear"
+            android:onClick="onClick" />
+
+        <Button
+            android:id="@+id/reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/navy"
+            android:textSize="18sp"
+            android:text="@string/register"
+            android:onClick="onClick"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/gbck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/navy"
+        android:textSize="18sp"
+        android:text="@string/goback"
+        android:onClick="onClick"/>
+
+</LinearLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".UserDetails">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/user_dets"
+        android:textSize="25sp"
+        android:textColor="@color/navy"
+        android:fontFamily="serif" />
+
+    <TextView
+        android:id="@+id/namedit"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/welcome"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:fontFamily="sans-serif-light" />
+
+    <TextView
+        android:id="@+id/usern2"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/fname"
+        android:textSize="18sp"
+        android:fontFamily="serif"/>
+
+    <TextView
+        android:id="@+id/gender2"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="serif"
+        android:textSize="18sp"
+        android:text="@string/usergender" />
+
+    <TextView
+        android:id="@+id/yob"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="serif"
+        android:textSize="18sp"
+        android:text="@string/dob"/>
+
+    <TextView
+        android:id="@+id/ageYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="serif"
+        android:textSize="18sp"
+        android:text="@string/age"/>
+
+
+    <TextView
+        android:id="@+id/userntxt"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="serif"
+        android:textSize="18sp"
+        android:text="@string/userntxt"/>
+
+    <TextView
+        android:id="@+id/pwdtxt"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="serif"
+        android:textSize="18sp"
+        android:text="@string/pwdtxt"/>
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:text="@string/log_out" />
+
+    <TextView
+        android:id="@+id/t3"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="15sp"
+        android:text="@string/back2login" />
+
+</LinearLayout>
